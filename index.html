@@ -104,6 +104,37 @@
     #play-music:hover {
       background: rgba(255, 255, 255, 0.3);
       transform: scale(1.05);
+
+/* Стрелочка вниз */
+.down-arrow {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: white;
+  animation: bounce 2s infinite;
+  backdrop-filter: blur(2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(10px);
+  }
+  60% {
+    transform: translateY(5px);
+  }
+}
     }
 
         /* Блок 2 — Приветствие */
@@ -279,13 +310,20 @@
  <div class="music-button">
       <button id="play-music">🎶 Включить музыку</button>
     </div>
+<div class="music-button">
+  <button id="play-music">🎶 Включить музыку</button>
+</div>
+
+<!-- СТРЕЛОЧКА ВНИЗ -->
+<div class="down-arrow">↓</div>
+
    </section>
 
   <!-- Блок 2: Приветствие -->
   <section id="welcome" class="section">
     <img src="ori.png" alt="Орнамент" class="ornament">
     <p>
-      ДОРОГИЕ НАДЕЖДА И ИВАН!<br><br>
+      ДОРОГИЕ ОЛЬГА и РАСУЛ!<br><br>
       Спешим поделиться с вами радостной новостью — у нас скоро свадьба!<br>
       Мы приглашаем вас разделить с нами радость этого особенного события и стать частью нашей семейной истории. Ваше присутствие сделает наш день еще более значимым и незабываемым.
     </p>
